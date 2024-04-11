@@ -26,8 +26,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	machinerytypes "k8s.io/apimachinery/pkg/types"
 
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 )
 
 var _ = Describe("Authentication Webhooks", func() {

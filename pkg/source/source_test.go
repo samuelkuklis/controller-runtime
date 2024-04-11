@@ -23,12 +23,12 @@ import (
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"sigs.k8s.io/controller-runtime/pkg/cache/informertest"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/source"
+	"github.com/samuelkuklis/controller-runtime/pkg/cache/informertest"
+	"github.com/samuelkuklis/controller-runtime/pkg/event"
+	"github.com/samuelkuklis/controller-runtime/pkg/handler"
+	"github.com/samuelkuklis/controller-runtime/pkg/predicate"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
+	"github.com/samuelkuklis/controller-runtime/pkg/source"
 
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

@@ -9,7 +9,7 @@ import (
 
 	"github.com/go-logr/logr"
 
-	envp "sigs.k8s.io/controller-runtime/tools/setup-envtest/env"
+	envp "github.com/samuelkuklis/controller-runtime/tools/setup-envtest/env"
 )
 
 // Use is a workflow that prints out information about stored

@@ -19,8 +19,8 @@ package komega
 import (
 	"context"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
 	"k8s.io/apimachinery/pkg/types"
-	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
 // komega is a collection of utilites for writing tests involving a mocked

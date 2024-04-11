@@ -19,18 +19,18 @@ package main
 import (
 	"os"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/client/config"
+	"github.com/samuelkuklis/controller-runtime/pkg/controller"
+	"github.com/samuelkuklis/controller-runtime/pkg/handler"
+	"github.com/samuelkuklis/controller-runtime/pkg/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/log/zap"
+	"github.com/samuelkuklis/controller-runtime/pkg/manager"
+	"github.com/samuelkuklis/controller-runtime/pkg/manager/signals"
+	"github.com/samuelkuklis/controller-runtime/pkg/source"
+	"github.com/samuelkuklis/controller-runtime/pkg/webhook"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	"sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
-	"sigs.k8s.io/controller-runtime/pkg/source"
-	"sigs.k8s.io/controller-runtime/pkg/webhook"
 )
 
 func init() {

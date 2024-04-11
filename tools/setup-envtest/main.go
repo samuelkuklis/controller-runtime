@@ -15,11 +15,11 @@ import (
 	flag "github.com/spf13/pflag"
 	"go.uber.org/zap"
 
-	envp "sigs.k8s.io/controller-runtime/tools/setup-envtest/env"
-	"sigs.k8s.io/controller-runtime/tools/setup-envtest/remote"
-	"sigs.k8s.io/controller-runtime/tools/setup-envtest/store"
-	"sigs.k8s.io/controller-runtime/tools/setup-envtest/versions"
-	"sigs.k8s.io/controller-runtime/tools/setup-envtest/workflows"
+	envp "github.com/samuelkuklis/controller-runtime/tools/setup-envtest/env"
+	"github.com/samuelkuklis/controller-runtime/tools/setup-envtest/remote"
+	"github.com/samuelkuklis/controller-runtime/tools/setup-envtest/store"
+	"github.com/samuelkuklis/controller-runtime/tools/setup-envtest/versions"
+	"github.com/samuelkuklis/controller-runtime/tools/setup-envtest/workflows"
 )
 
 const (

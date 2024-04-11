@@ -17,11 +17,11 @@ limitations under the License.
 package handler
 
 import (
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/event"
+	"github.com/samuelkuklis/controller-runtime/pkg/reconcile"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
 )
 
 // MapFunc is the signature required for enqueueing requests from a generic function.

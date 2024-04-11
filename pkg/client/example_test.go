@@ -28,8 +28,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/types"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/config"
 )
 
 var (

@@ -19,13 +19,13 @@ package predicate_test
 import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/event"
+	"github.com/samuelkuklis/controller-runtime/pkg/predicate"
 )
 
 var _ = Describe("Predicate", func() {

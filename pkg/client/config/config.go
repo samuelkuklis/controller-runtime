@@ -23,10 +23,10 @@ import (
 	"os/user"
 	"path/filepath"
 
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
 )
 
 // KubeconfigFlagName is the name of the kubeconfig flag

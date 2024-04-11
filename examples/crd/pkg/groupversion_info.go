@@ -19,9 +19,9 @@ limitations under the License.
 package pkg
 
 import (
+	logf "github.com/samuelkuklis/controller-runtime/pkg/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/scheme"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/scheme"
 )
 
 var (

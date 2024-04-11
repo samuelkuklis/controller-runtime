@@ -24,7 +24,7 @@ import (
 	"github.com/go-logr/logr"
 	authenticationv1 "k8s.io/api/authentication/v1"
 
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 )
 
 var (

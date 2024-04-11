@@ -21,15 +21,15 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/kubernetes/utils/pointer"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/apiutil"
 	"k8s.io/apimachinery/pkg/api/equality"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"github.com/kubernetes/utils/pointer"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
 )
 
 // AlreadyOwnedError is an error returned if the object you are trying to assign

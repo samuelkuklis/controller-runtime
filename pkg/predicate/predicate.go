@@ -19,12 +19,12 @@ package predicate
 import (
 	"reflect"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/event"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
 )
 
 var log = logf.RuntimeLog.WithName("predicate").WithName("eventFilters")

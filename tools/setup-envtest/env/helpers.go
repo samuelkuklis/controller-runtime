@@ -6,7 +6,7 @@ package env
 import (
 	"fmt"
 
-	"sigs.k8s.io/controller-runtime/tools/setup-envtest/versions"
+	"github.com/samuelkuklis/controller-runtime/tools/setup-envtest/versions"
 )
 
 // orderPlatforms orders platforms by OS then arch.

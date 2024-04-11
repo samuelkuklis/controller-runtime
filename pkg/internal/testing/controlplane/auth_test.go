@@ -27,8 +27,8 @@ import (
 	"k8s.io/client-go/rest"
 	kcert "k8s.io/client-go/util/cert"
 
-	cp "sigs.k8s.io/controller-runtime/pkg/internal/testing/controlplane"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/process"
+	cp "github.com/samuelkuklis/controller-runtime/pkg/internal/testing/controlplane"
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/testing/process"
 )
 
 var _ = Describe("Cert Authentication", func() {

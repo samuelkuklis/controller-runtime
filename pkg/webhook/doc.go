@@ -22,7 +22,7 @@ Currently, it only supports admission webhooks. It will support CRD conversion w
 package webhook
 
 import (
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("webhook")

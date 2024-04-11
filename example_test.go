@@ -22,10 +22,10 @@ import (
 	"os"
 	"time"
 
+	ctrl "github.com/samuelkuklis/controller-runtime"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
-	ctrl "sigs.k8s.io/controller-runtime"
-	"sigs.k8s.io/controller-runtime/pkg/client"
 
 	// since we invoke tests with -ginkgo.junit-report we need to import ginkgo.
 	_ "github.com/onsi/ginkgo/v2"

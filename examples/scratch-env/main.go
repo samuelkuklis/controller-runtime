@@ -23,9 +23,9 @@ import (
 	flag "github.com/spf13/pflag"
 	"go.uber.org/zap"
 
-	ctrl "sigs.k8s.io/controller-runtime"
-	"sigs.k8s.io/controller-runtime/pkg/envtest"
-	logzap "sigs.k8s.io/controller-runtime/pkg/log/zap"
+	ctrl "github.com/samuelkuklis/controller-runtime"
+	"github.com/samuelkuklis/controller-runtime/pkg/envtest"
+	logzap "github.com/samuelkuklis/controller-runtime/pkg/log/zap"
 )
 
 var (

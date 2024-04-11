@@ -1,6 +1,6 @@
 version: "2"
 domain: testprojects.kb.io
-repo: sigs.k8s.io/controller-runtime/pkg/webhook/conversion/testdata
+repo: github.com/samuelkuklis/controller-runtime/pkg/webhook/conversion/testdata
 resources:
 - group: jobs
   version: v1

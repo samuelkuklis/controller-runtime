@@ -20,11 +20,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/client/apiutil"
 	apimeta "k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
 )
 
 // FilterWithLabels returns a copy of the items in objs matching labelSel.

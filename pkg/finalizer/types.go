@@ -16,7 +16,7 @@ package finalizer
 import (
 	"context"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
 )
 
 // Registerer holds Register that will check if a key is already registered

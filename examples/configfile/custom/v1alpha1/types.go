@@ -20,10 +20,10 @@ limitations under the License.
 package v1alpha1
 
 import (
+	cfg "github.com/samuelkuklis/controller-runtime/pkg/config/v1alpha1"
+	"github.com/samuelkuklis/controller-runtime/pkg/scheme"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	cfg "sigs.k8s.io/controller-runtime/pkg/config/v1alpha1"
-	"sigs.k8s.io/controller-runtime/pkg/scheme"
 )
 
 var (

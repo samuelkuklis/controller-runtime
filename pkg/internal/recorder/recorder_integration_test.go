@@ -19,17 +19,17 @@ package recorder_test
 import (
 	"context"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/controller"
+	"github.com/samuelkuklis/controller-runtime/pkg/handler"
+	"github.com/samuelkuklis/controller-runtime/pkg/manager"
+	"github.com/samuelkuklis/controller-runtime/pkg/reconcile"
+	"github.com/samuelkuklis/controller-runtime/pkg/source"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/kubernetes/scheme"
 	ref "k8s.io/client-go/tools/reference"
-	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/source"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

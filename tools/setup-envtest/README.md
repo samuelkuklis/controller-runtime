@@ -8,7 +8,7 @@ To use it, just go-install it on 1.16+ (it's a separate, self-contained
 module):
 
 ```shell
-go install sigs.k8s.io/controller-runtime/tools/setup-envtest@latest
+go install github.com/samuelkuklis/controller-runtime/tools/setup-envtest@latest
 ```
 
 For full documentation, run it with the `--help` flag, but here are some

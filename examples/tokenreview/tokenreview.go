@@ -21,7 +21,7 @@ import (
 
 	v1 "k8s.io/api/authentication/v1"
 
-	"sigs.k8s.io/controller-runtime/pkg/webhook/authentication"
+	"github.com/samuelkuklis/controller-runtime/pkg/webhook/authentication"
 )
 
 // authenticator validates tokenreviews

@@ -26,7 +26,7 @@ import (
 	admissionv1 "k8s.io/api/admission/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 )
 
 type multiMutating []Handler

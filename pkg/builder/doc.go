@@ -22,7 +22,7 @@ limitations under the License.
 package builder
 
 import (
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("builder")

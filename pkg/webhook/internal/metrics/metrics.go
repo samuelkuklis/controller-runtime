@@ -22,7 +22,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
+	"github.com/samuelkuklis/controller-runtime/pkg/metrics"
 )
 
 var (

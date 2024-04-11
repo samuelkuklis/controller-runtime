@@ -25,14 +25,14 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"sigs.k8s.io/controller-runtime/pkg/builder"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
+	"github.com/samuelkuklis/controller-runtime/pkg/builder"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/config"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/log/zap"
+	"github.com/samuelkuklis/controller-runtime/pkg/manager"
+	"github.com/samuelkuklis/controller-runtime/pkg/manager/signals"
+	"github.com/samuelkuklis/controller-runtime/pkg/reconcile"
 )
 
 func ExampleBuilder_metadata_only() {

@@ -19,16 +19,16 @@ package handler
 import (
 	"fmt"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/event"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/reconcile"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 	"k8s.io/apimachinery/pkg/api/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
 )
 
 var _ EventHandler = &EnqueueRequestForOwner{}

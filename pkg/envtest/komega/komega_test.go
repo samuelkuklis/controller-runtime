@@ -3,14 +3,13 @@ package komega
 import (
 	"testing"
 
+	"github.com/kubernetes/utils/pointer"
 	_ "github.com/onsi/ginkgo/v2"
-	. "github.com/onsi/gomega"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/utils/pointer"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	fakeclient "sigs.k8s.io/controller-runtime/pkg/client/fake"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	fakeclient "github.com/samuelkuklis/controller-runtime/pkg/client/fake"
 )
 
 func exampleDeployment() *appsv1.Deployment {

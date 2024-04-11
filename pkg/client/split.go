@@ -25,7 +25,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/apiutil"
 )
 
 // NewDelegatingClientInput encapsulates the input parameters to create a new delegating client.

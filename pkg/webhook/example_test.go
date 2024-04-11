@@ -20,12 +20,12 @@ import (
 	"context"
 	"net/http"
 
+	ctrl "github.com/samuelkuklis/controller-runtime"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/manager/signals"
+	. "github.com/samuelkuklis/controller-runtime/pkg/webhook"
+	"github.com/samuelkuklis/controller-runtime/pkg/webhook/admission"
 	"k8s.io/client-go/kubernetes/scheme"
-	ctrl "sigs.k8s.io/controller-runtime"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
-	. "sigs.k8s.io/controller-runtime/pkg/webhook"
-	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
 )
 
 var (

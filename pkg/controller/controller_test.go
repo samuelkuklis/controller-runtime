@@ -21,22 +21,20 @@ import (
 	"fmt"
 	"time"
 
-	. "github.com/onsi/ginkgo/v2"
-	. "github.com/onsi/gomega"
+	"github.com/kubernetes/utils/pointer"
 	"go.uber.org/goleak"
 	corev1 "k8s.io/api/core/v1"
-	"k8s.io/utils/pointer"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/config/v1alpha1"
-	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	internalcontroller "sigs.k8s.io/controller-runtime/pkg/internal/controller"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/source"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/config/v1alpha1"
+	"github.com/samuelkuklis/controller-runtime/pkg/controller"
+	"github.com/samuelkuklis/controller-runtime/pkg/event"
+	"github.com/samuelkuklis/controller-runtime/pkg/handler"
+	internalcontroller "github.com/samuelkuklis/controller-runtime/pkg/internal/controller"
+	"github.com/samuelkuklis/controller-runtime/pkg/manager"
+	"github.com/samuelkuklis/controller-runtime/pkg/reconcile"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
+	"github.com/samuelkuklis/controller-runtime/pkg/source"
 )
 
 var _ = Describe("controller.Controller", func() {

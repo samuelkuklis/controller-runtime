@@ -25,10 +25,10 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/record"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	intrec "sigs.k8s.io/controller-runtime/pkg/internal/recorder"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	"github.com/samuelkuklis/controller-runtime/pkg/cache"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	intrec "github.com/samuelkuklis/controller-runtime/pkg/internal/recorder"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 )
 
 type cluster struct {

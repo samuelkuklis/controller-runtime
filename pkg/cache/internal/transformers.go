@@ -5,7 +5,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/tools/cache"
 
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/apiutil"
 )
 
 // TransformFuncByObject provides access to the correct transform function for

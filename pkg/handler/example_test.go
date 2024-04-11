@@ -17,16 +17,16 @@ limitations under the License.
 package handler_test
 
 import (
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/controller"
+	"github.com/samuelkuklis/controller-runtime/pkg/event"
+	"github.com/samuelkuklis/controller-runtime/pkg/handler"
+	"github.com/samuelkuklis/controller-runtime/pkg/reconcile"
+	"github.com/samuelkuklis/controller-runtime/pkg/source"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/source"
 )
 
 var c controller.Controller

@@ -16,7 +16,7 @@ limitations under the License.
 
 package event
 
-import "sigs.k8s.io/controller-runtime/pkg/client"
+import "github.com/samuelkuklis/controller-runtime/pkg/client"
 
 // CreateEvent is an event where a Kubernetes object was created.  CreateEvent should be generated
 // by a source.Source and transformed into a reconcile.Request by an handler.EventHandler.

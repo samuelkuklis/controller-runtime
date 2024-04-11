@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	"sigs.k8s.io/controller-runtime/pkg/internal/flock"
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/flock"
 )
 
 // TODO(directxman12): interface / release functionality for external port managers

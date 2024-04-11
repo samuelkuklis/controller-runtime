@@ -31,9 +31,9 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/client-go/kubernetes/scheme"
 
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/webhook/internal/metrics"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
+	"github.com/samuelkuklis/controller-runtime/pkg/webhook/internal/metrics"
 )
 
 var (

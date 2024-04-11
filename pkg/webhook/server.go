@@ -29,13 +29,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/certwatcher"
+	"github.com/samuelkuklis/controller-runtime/pkg/healthz"
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/httpserver"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
+	"github.com/samuelkuklis/controller-runtime/pkg/webhook/internal/metrics"
 	"k8s.io/apimachinery/pkg/runtime"
 	kscheme "k8s.io/client-go/kubernetes/scheme"
-	"sigs.k8s.io/controller-runtime/pkg/certwatcher"
-	"sigs.k8s.io/controller-runtime/pkg/healthz"
-	"sigs.k8s.io/controller-runtime/pkg/internal/httpserver"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/webhook/internal/metrics"
 )
 
 // DefaultPort is the default port that the webhook server serves.

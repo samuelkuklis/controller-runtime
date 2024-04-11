@@ -17,10 +17,10 @@ package v1
 
 import (
 	"fmt"
+	"github.com/samuelkuklis/controller-runtime/pkg/conversion"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"sigs.k8s.io/controller-runtime/pkg/conversion"
 
-	v2 "sigs.k8s.io/controller-runtime/pkg/webhook/conversion/testdata/api/v2"
+	v2 "github.com/samuelkuklis/controller-runtime/pkg/webhook/conversion/testdata/api/v2"
 )
 
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!

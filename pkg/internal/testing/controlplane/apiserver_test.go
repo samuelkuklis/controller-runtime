@@ -24,8 +24,8 @@ import (
 	. "github.com/onsi/gomega"
 	"k8s.io/client-go/rest"
 
-	. "sigs.k8s.io/controller-runtime/pkg/internal/testing/controlplane"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/process"
+	. "github.com/samuelkuklis/controller-runtime/pkg/internal/testing/controlplane"
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/testing/process"
 )
 
 var _ = Describe("APIServer", func() {

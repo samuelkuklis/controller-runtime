@@ -22,9 +22,9 @@ import (
 
 	"k8s.io/client-go/rest"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
+	"github.com/samuelkuklis/controller-runtime/pkg/cache"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/apiutil"
+	"github.com/samuelkuklis/controller-runtime/pkg/manager"
 )
 
 var _ = Describe("informerCache", func() {

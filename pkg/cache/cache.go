@@ -31,10 +31,10 @@ import (
 	"k8s.io/client-go/rest"
 	toolscache "k8s.io/client-go/tools/cache"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache/internal"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/cache/internal"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/apiutil"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("object-cache")

@@ -22,7 +22,7 @@ See examples/mutatingwebhook.go and examples/validatingwebhook.go for examples o
 package admission
 
 import (
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("admission")

@@ -24,16 +24,16 @@ import (
 	"github.com/go-logr/logr"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
+	"github.com/samuelkuklis/controller-runtime/pkg/cache"
+	"github.com/samuelkuklis/controller-runtime/pkg/cache/informertest"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
+	intrec "github.com/samuelkuklis/controller-runtime/pkg/internal/recorder"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 	"go.uber.org/goleak"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/cache/informertest"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	intrec "sigs.k8s.io/controller-runtime/pkg/internal/recorder"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
 )
 
 var _ = Describe("cluster.Cluster", func() {

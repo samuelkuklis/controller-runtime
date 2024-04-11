@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	. "github.com/onsi/gomega"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
-	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
 func TestEqualObjectMatcher(t *testing.T) {

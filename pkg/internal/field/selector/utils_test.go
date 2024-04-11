@@ -21,7 +21,7 @@ import (
 	. "github.com/onsi/gomega"
 	"k8s.io/apimachinery/pkg/fields"
 
-	. "sigs.k8s.io/controller-runtime/pkg/internal/field/selector"
+	. "github.com/samuelkuklis/controller-runtime/pkg/internal/field/selector"
 )
 
 var _ = Describe("RequiresExactMatch function", func() {

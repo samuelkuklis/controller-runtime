@@ -29,7 +29,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes/scheme"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
 )
 
 var _ = Describe("Test", func() {

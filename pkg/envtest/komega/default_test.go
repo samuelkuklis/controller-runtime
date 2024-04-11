@@ -3,10 +3,9 @@ package komega
 import (
 	"testing"
 
-	. "github.com/onsi/gomega"
+	"github.com/kubernetes/utils/pointer"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/utils/pointer"
 )
 
 func TestDefaultGet(t *testing.T) {

@@ -19,14 +19,14 @@ package internal
 import (
 	"fmt"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/event"
+	"github.com/samuelkuklis/controller-runtime/pkg/handler"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
 
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
+	"github.com/samuelkuklis/controller-runtime/pkg/predicate"
 )
 
 var log = logf.RuntimeLog.WithName("source").WithName("EventHandler")

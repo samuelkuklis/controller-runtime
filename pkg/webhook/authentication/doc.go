@@ -23,7 +23,7 @@ See examples/tokenreview/ for an example of authentication webhooks.
 package authentication
 
 import (
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("authentication")

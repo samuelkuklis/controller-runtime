@@ -17,7 +17,7 @@ import (
 	"sort"
 
 	"github.com/go-logr/logr"
-	"sigs.k8s.io/controller-runtime/tools/setup-envtest/versions"
+	"github.com/samuelkuklis/controller-runtime/tools/setup-envtest/versions"
 )
 
 // objectList is the parts we need of the GCS "list-objects-in-bucket" endpoint.

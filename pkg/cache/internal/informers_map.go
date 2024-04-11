@@ -35,7 +35,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/apiutil"
 )
 
 func init() {

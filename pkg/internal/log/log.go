@@ -19,7 +19,7 @@ package log
 import (
 	"github.com/go-logr/logr"
 
-	"sigs.k8s.io/controller-runtime/pkg/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/log"
 )
 
 var (

@@ -48,9 +48,9 @@ generally cover most circumstances.
 ### Q: Where's the fake client?  How do I use it?
 
 **A**: The fake client
-[exists](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/client/fake),
+[exists](https://pkg.go.dev/github.com/samuelkuklis/controller-runtime/pkg/client/fake),
 but we generally recommend using
-[envtest.Environment](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/envtest#Environment)
+[envtest.Environment](https://pkg.go.dev/github.com/samuelkuklis/controller-runtime/pkg/envtest#Environment)
 to test against a real API server.  In our experience, tests using fake
 clients gradually re-implement poorly-written impressions of a real API
 server, which leads to hard-to-maintain, complex test code.
@@ -58,7 +58,7 @@ server, which leads to hard-to-maintain, complex test code.
 ### Q: How should I write tests?  Any suggestions for getting started?
 
 - Use the aforementioned
-  [envtest.Environment](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/envtest#Environment)
+  [envtest.Environment](https://pkg.go.dev/github.com/samuelkuklis/controller-runtime/pkg/envtest#Environment)
   to spin up a real API server instead of trying to mock one out.
 
 - Structure your tests to check that the state of the world is as you
@@ -77,5 +77,5 @@ mapping between Go types and group-version-kinds in Kubernetes. In
 general, your application should have its own Scheme containing the types
 from the API groups that it needs (be they Kubernetes types or your own).
 See the [scheme builder
-docs](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/scheme) for
+docs](https://pkg.go.dev/github.com/samuelkuklis/controller-runtime/pkg/scheme) for
 more information.

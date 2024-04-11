@@ -40,8 +40,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	kscheme "k8s.io/client-go/kubernetes/scheme"
 
-	"sigs.k8s.io/controller-runtime/examples/crd/pkg"
-	"sigs.k8s.io/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/examples/crd/pkg"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
 )
 
 func deleteDeployment(ctx context.Context, dep *appsv1.Deployment, ns string) {

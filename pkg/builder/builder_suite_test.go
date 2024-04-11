@@ -27,12 +27,12 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/rest"
 
-	"sigs.k8s.io/controller-runtime/pkg/envtest"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/addr"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
-	"sigs.k8s.io/controller-runtime/pkg/webhook"
+	"github.com/samuelkuklis/controller-runtime/pkg/envtest"
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/testing/addr"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/log/zap"
+	"github.com/samuelkuklis/controller-runtime/pkg/metrics"
+	"github.com/samuelkuklis/controller-runtime/pkg/webhook"
 )
 
 func TestBuilder(t *testing.T) {

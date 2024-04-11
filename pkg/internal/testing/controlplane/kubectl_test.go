@@ -26,7 +26,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	ccapi "k8s.io/client-go/tools/clientcmd/api"
 
-	. "sigs.k8s.io/controller-runtime/pkg/internal/testing/controlplane"
+	. "github.com/samuelkuklis/controller-runtime/pkg/internal/testing/controlplane"
 )
 
 var _ = Describe("Kubectl", func() {

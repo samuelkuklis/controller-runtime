@@ -17,7 +17,7 @@ import (
 	"github.com/go-logr/logr"
 	"github.com/spf13/afero"
 
-	"sigs.k8s.io/controller-runtime/tools/setup-envtest/versions"
+	"github.com/samuelkuklis/controller-runtime/tools/setup-envtest/versions"
 )
 
 // TODO(directxman12): error messages don't show full path, which is gonna make

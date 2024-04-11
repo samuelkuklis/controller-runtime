@@ -33,9 +33,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	kscheme "k8s.io/client-go/kubernetes/scheme"
 
-	jobsv1 "sigs.k8s.io/controller-runtime/pkg/webhook/conversion/testdata/api/v1"
-	jobsv2 "sigs.k8s.io/controller-runtime/pkg/webhook/conversion/testdata/api/v2"
-	jobsv3 "sigs.k8s.io/controller-runtime/pkg/webhook/conversion/testdata/api/v3"
+	jobsv1 "github.com/samuelkuklis/controller-runtime/pkg/webhook/conversion/testdata/api/v1"
+	jobsv2 "github.com/samuelkuklis/controller-runtime/pkg/webhook/conversion/testdata/api/v2"
+	jobsv3 "github.com/samuelkuklis/controller-runtime/pkg/webhook/conversion/testdata/api/v3"
 )
 
 var _ = Describe("Conversion Webhook", func() {

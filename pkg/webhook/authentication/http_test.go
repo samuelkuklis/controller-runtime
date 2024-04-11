@@ -28,8 +28,8 @@ import (
 	. "github.com/onsi/gomega"
 	authenticationv1 "k8s.io/api/authentication/v1"
 
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/internal/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 )
 
 var _ = Describe("Authentication Webhooks", func() {

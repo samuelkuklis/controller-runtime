@@ -3,7 +3,7 @@ package komega
 import (
 	"context"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
 )
 
 // defaultK is the Komega used by the package global functions.

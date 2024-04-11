@@ -20,9 +20,9 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/objectutil"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
-	"sigs.k8s.io/controller-runtime/pkg/internal/objectutil"
 )
 
 // NewNamespacedClient wraps an existing client enforcing the namespace value.

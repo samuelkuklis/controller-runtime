@@ -27,7 +27,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	kcapi "k8s.io/client-go/tools/clientcmd/api"
 
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/process"
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/testing/process"
 )
 
 const (

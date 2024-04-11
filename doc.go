@@ -29,7 +29,7 @@ limitations under the License.
 // contains all of the common types needed to get started building controllers:
 //
 //	import (
-//		ctrl "sigs.k8s.io/controller-runtime"
+//		ctrl "github.com/samuelkuklis/controller-runtime"
 //	)
 //
 // The examples in this package walk through a basic controller setup.  The

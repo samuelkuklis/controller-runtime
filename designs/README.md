@@ -17,7 +17,7 @@ proof-of-concept process can help iron out wrinkles and can help with the
 ## Out-of-Date Designs
 
 **Controller Runtime documentation
-[GoDoc](https://pkg.go.dev/sigs.k8s.io/controller-runtime) should be
+[GoDoc](https://pkg.go.dev/github.com/samuelkuklis/controller-runtime) should be
 considered the canonical, update-to-date reference and architectural
 documentation** for Controller Runtime.
 

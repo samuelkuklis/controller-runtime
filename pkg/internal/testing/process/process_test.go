@@ -28,8 +28,8 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/ghttp"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/addr"
-	. "sigs.k8s.io/controller-runtime/pkg/internal/testing/process"
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/testing/addr"
+	. "github.com/samuelkuklis/controller-runtime/pkg/internal/testing/process"
 )
 
 const (

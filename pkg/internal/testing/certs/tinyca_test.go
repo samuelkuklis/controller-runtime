@@ -28,7 +28,7 @@ import (
 	. "github.com/onsi/gomega"
 	. "github.com/onsi/gomega/gstruct"
 
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/certs"
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/testing/certs"
 )
 
 var _ = Describe("TinyCA", func() {

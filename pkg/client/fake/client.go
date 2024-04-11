@@ -26,6 +26,7 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/field/selector"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/api/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -39,11 +40,10 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/testing"
-	"sigs.k8s.io/controller-runtime/pkg/internal/field/selector"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
-	"sigs.k8s.io/controller-runtime/pkg/internal/objectutil"
+	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/apiutil"
+	"github.com/samuelkuklis/controller-runtime/pkg/internal/objectutil"
 )
 
 type versionedTracker struct {

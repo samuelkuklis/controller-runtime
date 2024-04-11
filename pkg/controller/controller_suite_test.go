@@ -27,12 +27,12 @@ import (
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
 
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllertest"
-	"sigs.k8s.io/controller-runtime/pkg/envtest"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
-	crscheme "sigs.k8s.io/controller-runtime/pkg/scheme"
+	"github.com/samuelkuklis/controller-runtime/pkg/controller/controllertest"
+	"github.com/samuelkuklis/controller-runtime/pkg/envtest"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/log/zap"
+	"github.com/samuelkuklis/controller-runtime/pkg/metrics"
+	crscheme "github.com/samuelkuklis/controller-runtime/pkg/scheme"
 )
 
 func TestSource(t *testing.T) {

@@ -17,7 +17,7 @@ limitations under the License.
 package builder
 
 import (
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
+	"github.com/samuelkuklis/controller-runtime/pkg/predicate"
 )
 
 // {{{ "Functional" Option Interfaces

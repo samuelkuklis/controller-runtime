@@ -26,13 +26,13 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/samuelkuklis/controller-runtime/pkg/conversion"
+	logf "github.com/samuelkuklis/controller-runtime/pkg/log"
 	apix "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
 	"k8s.io/apimachinery/pkg/api/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"sigs.k8s.io/controller-runtime/pkg/conversion"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
 )
 
 var (

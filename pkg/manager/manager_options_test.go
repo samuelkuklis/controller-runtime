@@ -4,11 +4,11 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"sigs.k8s.io/controller-runtime/pkg/config"
+	"github.com/samuelkuklis/controller-runtime/pkg/config"
 
+	configv1alpha1 "github.com/samuelkuklis/controller-runtime/pkg/config/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
-	configv1alpha1 "sigs.k8s.io/controller-runtime/pkg/config/v1alpha1"
 )
 
 var _ = Describe("manager.Options", func() {

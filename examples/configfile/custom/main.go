@@ -19,18 +19,18 @@ package main
 import (
 	"os"
 
+	ctrl "github.com/samuelkuklis/controller-runtime"
+	"github.com/samuelkuklis/controller-runtime/examples/configfile/custom/v1alpha1"
+	"github.com/samuelkuklis/controller-runtime/pkg/client/config"
+	cfg "github.com/samuelkuklis/controller-runtime/pkg/config"
+	"github.com/samuelkuklis/controller-runtime/pkg/log"
+	"github.com/samuelkuklis/controller-runtime/pkg/log/zap"
+	"github.com/samuelkuklis/controller-runtime/pkg/manager/signals"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
-	ctrl "sigs.k8s.io/controller-runtime"
-	"sigs.k8s.io/controller-runtime/examples/configfile/custom/v1alpha1"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	cfg "sigs.k8s.io/controller-runtime/pkg/config"
-	"sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
 )
 
 var scheme = runtime.NewScheme()

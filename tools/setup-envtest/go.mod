@@ -1,4 +1,4 @@
-module sigs.k8s.io/controller-runtime/tools/setup-envtest
+module github.com/samuelkuklis/controller-runtime/tools/setup-envtest
 
 go 1.17
 

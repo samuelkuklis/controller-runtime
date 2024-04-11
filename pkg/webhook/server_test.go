@@ -26,10 +26,10 @@ import (
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
+	"github.com/samuelkuklis/controller-runtime/pkg/envtest"
+	"github.com/samuelkuklis/controller-runtime/pkg/webhook"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/envtest"
-	"sigs.k8s.io/controller-runtime/pkg/webhook"
 )
 
 var _ = Describe("Webhook Server", func() {
