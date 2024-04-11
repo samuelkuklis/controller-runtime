@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/kubernetes/utils/pointer"
 	"github.com/samuelkuklis/controller-runtime/pkg/client"
 	"github.com/samuelkuklis/controller-runtime/pkg/client/apiutil"
+	"github.com/samuelkuklis/utils/pointer"
 	"k8s.io/apimachinery/pkg/api/equality"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

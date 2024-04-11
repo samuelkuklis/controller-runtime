@@ -24,7 +24,6 @@ import (
 	"time"
 
 	"github.com/go-logr/logr"
-	"github.com/kubernetes/utils/pointer"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
 	"github.com/samuelkuklis/controller-runtime/pkg/cache"
@@ -39,6 +38,7 @@ import (
 	"github.com/samuelkuklis/controller-runtime/pkg/reconcile"
 	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 	"github.com/samuelkuklis/controller-runtime/pkg/source"
+	"github.com/samuelkuklis/utils/pointer"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

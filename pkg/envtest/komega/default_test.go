@@ -3,7 +3,7 @@ package komega
 import (
 	"testing"
 
-	"github.com/kubernetes/utils/pointer"
+	"github.com/samuelkuklis/utils/pointer"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

@@ -17,8 +17,8 @@ limitations under the License.
 package client_test
 
 import (
-	utilpointer "github.com/kubernetes/utils/pointer"
 	"github.com/samuelkuklis/controller-runtime/pkg/client"
+	utilpointer "github.com/samuelkuklis/utils/pointer"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/fields"
 	"k8s.io/apimachinery/pkg/labels"

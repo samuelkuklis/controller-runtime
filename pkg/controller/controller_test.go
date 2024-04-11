@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/kubernetes/utils/pointer"
+	"github.com/samuelkuklis/utils/pointer"
 	"go.uber.org/goleak"
 	corev1 "k8s.io/api/core/v1"
 

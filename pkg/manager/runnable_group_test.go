@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/kubernetes/utils/pointer"
 	"github.com/samuelkuklis/controller-runtime/pkg/cache/informertest"
 	"github.com/samuelkuklis/controller-runtime/pkg/webhook"
+	"github.com/samuelkuklis/utils/pointer"
 )
 
 var _ = Describe("runnables", func() {

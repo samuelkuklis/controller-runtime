@@ -26,7 +26,6 @@ import (
 	"time"
 
 	"github.com/go-logr/logr"
-	"github.com/kubernetes/utils/pointer"
 	"github.com/samuelkuklis/controller-runtime/pkg/cache"
 	"github.com/samuelkuklis/controller-runtime/pkg/client"
 	"github.com/samuelkuklis/controller-runtime/pkg/cluster"
@@ -40,6 +39,7 @@ import (
 	"github.com/samuelkuklis/controller-runtime/pkg/recorder"
 	"github.com/samuelkuklis/controller-runtime/pkg/runtime/inject"
 	"github.com/samuelkuklis/controller-runtime/pkg/webhook"
+	"github.com/samuelkuklis/utils/pointer"
 	"k8s.io/apimachinery/pkg/api/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
